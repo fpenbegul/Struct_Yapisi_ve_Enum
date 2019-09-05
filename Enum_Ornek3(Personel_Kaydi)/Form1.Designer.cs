@@ -32,6 +32,7 @@
             this.txtAdSoyad = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbDepartman = new System.Windows.Forms.ComboBox();
+            this.btnKaydet = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -67,17 +68,28 @@
             this.cmbDepartman.Size = new System.Drawing.Size(121, 21);
             this.cmbDepartman.TabIndex = 2;
             // 
+            // btnKaydet
+            // 
+            this.btnKaydet.Location = new System.Drawing.Point(87, 133);
+            this.btnKaydet.Name = "btnKaydet";
+            this.btnKaydet.Size = new System.Drawing.Size(121, 23);
+            this.btnKaydet.TabIndex = 3;
+            this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(393, 406);
+            this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.cmbDepartman);
             this.Controls.Add(this.txtAdSoyad);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -89,6 +101,7 @@
         private System.Windows.Forms.TextBox txtAdSoyad;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbDepartman;
+        private System.Windows.Forms.Button btnKaydet;
     }
 }
 
