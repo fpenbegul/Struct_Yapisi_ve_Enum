@@ -21,7 +21,30 @@ namespace Enum_Ornek3_Personel_Kaydi_
         {
             string[] departmann = Enum.GetNames(typeof(Departmanlar));
             cmbDepartman.Items.AddRange(departmann);
+            cmbDepartman.Items.Clear();
+            cmbDepartman.Items.AddRange(Enum.GetNames(typeof(Departmanlar)));
             cmbDepartman.SelectedIndex = 0;
         }
+
+        private void BtnKaydet_Click(object sender, EventArgs e)
+        {
+            Personel personel = new Personel();
+            personel.AdSoyad = txtAdSoyad.Text;
+            personel.Departman = (Departmanlar).Enum.Parse(typeof(Departmanlar), cmbDepartman.Text);
+
+            Departmanlar departman;
+            bool sonuc = Enum.TryParse<Departmanlar>(cmbDepartman.Text, out departman);
+
+            if (sonuc)
+            {
+                personel.Departman = departman;
+                MessageBox.Show("Personel Kaydı Yapıldı!");
+            }
+            else
+            {
+                MessageBox.Show("Lütfen bir departman seçiniz");
+            }
+        }
     }
+}
 }
