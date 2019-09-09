@@ -20,7 +20,7 @@ namespace Enum_Ornek3_Personel_Kaydi_
         private void Form1_Load(object sender, EventArgs e)
         {
             string[] departmann = Enum.GetNames(typeof(Departmanlar));
-            cmbDepartman.Items.AddRange(departmann);
+            cmbDepartman.Items.AddRange(departmann); 
             cmbDepartman.Items.Clear();
             cmbDepartman.Items.AddRange(Enum.GetNames(typeof(Departmanlar)));
             cmbDepartman.SelectedIndex = 0;
