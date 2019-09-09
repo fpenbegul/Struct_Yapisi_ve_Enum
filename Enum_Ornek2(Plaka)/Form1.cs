@@ -38,6 +38,9 @@ namespace Enum_Ornek2_Plaka_
         {
             string[] sehirler = Enum.GetNames(typeof(Sehirler));
             comboBox1.Items.AddRange(sehirler);
+
+          
+
         }
 
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)

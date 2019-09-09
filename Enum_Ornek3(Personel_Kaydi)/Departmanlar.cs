@@ -8,6 +8,6 @@ namespace Enum_Ornek3_Personel_Kaydi_
 {
     public enum Departmanlar
     {
-        Yazılım,Sistem,Web,Tasarım,Muhasebe,İngilizce
+        Yazılım, Sistem, Web, Tasarım, Muhasebe, İngilizce
     }
 }

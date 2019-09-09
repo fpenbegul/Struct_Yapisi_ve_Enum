@@ -30,12 +30,12 @@ namespace Enum_Ornek3_Personel_Kaydi_
         {
             Personel personel = new Personel();
             personel.AdSoyad = txtAdSoyad.Text;
-            personel.Departman = (Departmanlar).
+            //personel.Departman = (Departmanlar).
 
 
 
 
-            //personel.Departman = (Departmanlar).Enum.Parse(typeof(Departmanlar), cmbDepartman.Text);
+            personel.Departman = (Departmanlar)Enum.Parse(typeof(Departmanlar), cmbDepartman.Text);
 
 
             Departmanlar departman;
@@ -53,4 +53,4 @@ namespace Enum_Ornek3_Personel_Kaydi_
         }
     }
 }
-}
+
